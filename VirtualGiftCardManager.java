@@ -208,10 +208,10 @@ public class VirtualGiftCardManager extends GenericService {
         return false;
       }
     } catch (RepositoryException e) {
-      e.printStackTrace();
+      this.logInfo(e);
       return false;
     } catch (Exception e) {
-      e.printStackTrace();
+      this.logInfo(e);
       return false;
     }
     
@@ -298,10 +298,10 @@ public class VirtualGiftCardManager extends GenericService {
       vgcToSend.addEvent(vgcEvent);
       
     } catch (RepositoryException e) {
-      e.printStackTrace();
+      this.logInfo(e);
       return false;
     } catch (Exception e) {
-      e.printStackTrace();
+      this.logInfo(e);
       return false;
     }
     
